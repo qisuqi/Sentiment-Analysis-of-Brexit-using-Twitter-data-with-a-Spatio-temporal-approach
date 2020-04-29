@@ -7,7 +7,7 @@ import json
 import pandas as pd
 
 Keyword = ['Brexit','Referendum','General Election','Election Result 2019']
-tweets_to_capture = 35000
+tweets_to_capture = xxxx
 File = 'Twitter_after9.json'
 
 auth = OAuthHandler(CW_Credential.Consumer_key,CW_Credential.Consumer_secret)
