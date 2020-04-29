@@ -71,6 +71,3 @@ plt.title('Top 10 Location')
 plt.xlabel('Location')
 plt.ylabel('Number of Locations')
 plt.show()
-
-file.to_csv('Clean.csv')
-file.to_csv('Clean_copy.csv')
