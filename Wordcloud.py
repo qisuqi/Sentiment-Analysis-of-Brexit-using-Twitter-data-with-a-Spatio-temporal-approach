@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import numpy as np
 
-file = pd.read_csv('Final.csv')
+file = pd.read_csv('xxx.csv')
 
 file['Clean_tweets'] = file['Clean_tweets'].str.replace('_','')
 
