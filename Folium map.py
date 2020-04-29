@@ -3,7 +3,7 @@ from folium.plugins import HeatMap
 import pandas as pd
 
 
-file = pd.read_csv('Final.csv')
+file = pd.read_csv('xxx.csv')
 
 file = file.dropna()
 
