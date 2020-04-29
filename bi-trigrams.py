@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import CountVectorizer
 from wordcloud import WordCloud,STOPWORDS
 
-file = pd.read_csv('Final.csv')
+file = pd.read_csv('xxx.csv')
 
 def get_top_k_n_gram(corpus, k=None, n=None):
     vec = CountVectorizer(ngram_range=(n, n), stop_words='english').fit(corpus)
