@@ -8,8 +8,7 @@ from shapely.geometry import MultiPoint
 from geopy.distance import great_circle
 import geopandas
 
-
-file = pd.read_csv('Final.csv')
+file = pd.read_csv('xxx.csv')
 
 X = file[['Polarity','Subjectivity','Latitude','Longitude']]
 X = X.dropna()
@@ -24,7 +23,6 @@ sentiment = data['Polarity']
 
 coords = X.as_matrix(columns=['Latitude','Longitude'])
 
-
 kms_per_radian = 6371.0088
 epsilon = 1.5 / kms_per_radian
 
@@ -35,7 +33,6 @@ cluster_labels = db.labels_
 num_clusters = len(set(cluster_labels))
 clusters = pd.Series([coords[cluster_labels == n] for n in range(num_clusters)])
 print('Number of clusters: {}'.format(num_clusters))
-
 
 def get_centermost_point(cluster):
     centroid = (MultiPoint(cluster).centroid.x, MultiPoint(cluster).centroid.y)
