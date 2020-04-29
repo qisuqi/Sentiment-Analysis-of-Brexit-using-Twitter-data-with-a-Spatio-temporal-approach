@@ -1,7 +1,5 @@
 import pandas as pd
 
-#####################################
-#Import data1
 file1 = pd.read_csv('xxx.csv')
 
 #Clean the data
